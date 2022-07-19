@@ -4,8 +4,12 @@ class Graph extends Component {
 
     render() {
         return (
-            <div className='myPage col flex-grow-1'>
-                <h1>This is Graph component</h1>
+            <div id='graph' className=''>
+                <h1>Time Spend on projects</h1>
+
+                <canvas>
+                    Qui ci metteremo il grafico in qualche modo
+                </canvas>
             </div>
         )
     }

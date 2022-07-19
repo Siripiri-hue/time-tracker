@@ -60,7 +60,8 @@ img { width: 100%; }
 #myPage {
   /* max-width: 200px; */
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* navbar in alto */
