@@ -1,45 +1,105 @@
+/* reset */
+img { width: 100%; }
+
 /* globali */
 :root {
-  --navbar-bg: #21222D;
-  --pink-icon: #EFB7A4;
-  --active-icon: #E1FE5E;
-  --active-icon-bg: #2A2B39;
-  --inactive-icon: #97989F;
+  --dark-bg: #21222D;
+  --candy-pink: #EFB7A4;
+  --fluo-green: #E1FE5E;
+  --dark-blue: #2A2B39;
+  --dark-grey: #373842;
+  --medium-dark-grey: #97989F;
+  --medium-grey: #B6B6B6;
+  --medium-lightgrey: #EDEDEF;
+  --light-grey: #F6F6F7;
+  --super-lightgrey: #FAFAFB;
   --white: white;
-  --plus-bg: #373842;
+}
+
+.grey-text {
+  color: var(--medium-grey);
+}
+
+.little-text {
+  font-size: 0.8rem;
+}
+
+.superlightgrey-bg {
+  background-color: var(--super-lightgrey);
 }
 
 /* navbar */
-.myNavbar {
+#myNavbar {
   min-width: 80px;
-  background-color: var(--navbar-bg);
+  background-color: var(--dark-bg);
   height: 100vh;
   font-size: 1.5rem;
-  color: var(--inactive-icon);
+  color: var(--medium-dark-grey);
 }
 
 .pinkIcon {
-  color: var(--pink-icon);
+  color: var(--candy-pink);
 }
 
 .plusIcon {
   color: var(--white);
-  background-color: var(--plus-bg);
+  background-color: var(--dark-grey);
 }
 
 .activeIcon {
-  background-color: var(--active-icon-bg);
+  background-color: var(--dark-blue);
   padding: 8px 1px;
   border-radius: 5px;
 }
 
 .activeIcon, .icon:hover {
-  color: var(--active-icon);
+  color: var(--fluo-green);
 }
 
 /* pagina */
-.myPage {
+#myPage {
   /* max-width: 200px; */
   height: 100vh;
-  background-color: rgb(226, 226, 226);
+  overflow: hidden;
+}
+
+/* navbar in alto */
+#actionBar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--medium-lightgrey);
+}
+
+#searchInput {
+  position: relative;
+}
+
+#searchInput input {
+  background-color: var(--light-grey);
+  color: var(--medium-grey);
+  padding-left: 35px;
+  min-width: 250px;
+}
+
+#searchIcon {
+  position: absolute;
+  left: 10px;
+  color: var(--medium-grey);
+}
+
+#profile {
+  background-color: var(--super-lightgrey);
+}
+
+#profile > figure {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#profile > figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

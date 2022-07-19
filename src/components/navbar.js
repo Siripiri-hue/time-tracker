@@ -15,7 +15,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 class Navbar extends Component {
     render() {
         return (
-            <div className='myNavbar d-flex flex-column align-center py-5 px-3 justify-content-between'>
+            <div id='myNavbar' className='d-flex flex-column align-center py-5 px-3 justify-content-between'>
                 <div className='d-flex flex-column justify-content-between align-center gap-5'>
                     <span className='pinkIcon d-flex justify-content-center'>
                         <FontAwesomeIcon icon={faCircleNodes} />
