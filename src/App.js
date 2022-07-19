@@ -6,12 +6,12 @@ import Page from './components/page';
 
 function App() {
   return (
-    <>
-      <div className='d-flex'>
-        <Navbar />
-        <Page className="flex-grow-1"/>
-      </div>
-    </>
+
+    <div className='d-flex'>
+      <Navbar />
+      <Page />
+    </div>
+
   );
 }
 

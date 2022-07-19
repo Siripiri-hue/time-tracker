@@ -1,10 +1,43 @@
-.myNavbar {
-  max-width: 100px;
-  background-color: #21222D;
-  color: white;
-  height: 100vh;
+/* globali */
+:root {
+  --navbar-bg: #21222D;
+  --pink-icon: #EFB7A4;
+  --active-icon: #E1FE5E;
+  --active-icon-bg: #2A2B39;
+  --inactive-icon: #97989F;
+  --white: white;
+  --plus-bg: #373842;
 }
 
+/* navbar */
+.myNavbar {
+  min-width: 80px;
+  background-color: var(--navbar-bg);
+  height: 100vh;
+  font-size: 1.5rem;
+  color: var(--inactive-icon);
+}
+
+.pinkIcon {
+  color: var(--pink-icon);
+}
+
+.plusIcon {
+  color: var(--white);
+  background-color: var(--plus-bg);
+}
+
+.activeIcon {
+  background-color: var(--active-icon-bg);
+  padding: 8px 1px;
+  border-radius: 5px;
+}
+
+.activeIcon, .icon:hover {
+  color: var(--active-icon);
+}
+
+/* pagina */
 .myPage {
   /* max-width: 200px; */
   height: 100vh;

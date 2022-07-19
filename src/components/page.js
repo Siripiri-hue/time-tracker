@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// importazione dei "sottocomponenti"
+
 class Page extends Component {
 
     render() {
