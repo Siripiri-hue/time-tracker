@@ -14,11 +14,11 @@ class TimeTracker extends Component {
 
     render() {
         return (
-            <div className='container mb-3'>
+            <div className='container'>
                 <h1 className='sectionTitle'>Time Tracker</h1>
             
                 {/* row 1 */}
-                <div className='row timeTrackerBox d-flex align-items-center'>
+                <div className='row px-0 whiteBox mb-3 d-flex align-items-center'>
                     <div className='col-4 d-flex gap-2 flex-grow-1'>
                         <span className='roundedIcon d-flex justify-content-center align-items-center rounded-circle azureBg p-3'>
                             <FontAwesomeIcon icon={faWrench} />
@@ -46,7 +46,7 @@ class TimeTracker extends Component {
                 </div>
 
                 {/* row 2 */}
-                <div className="row timeTrackerBox d-flex align-items-center">
+                <div className="row whiteBox mb-3 d-flex align-items-center">
                     <div className="col-4 d-flex gap-2 flex-grow-1">
                         <span className='roundedIcon d-flex justify-content-center align-items-center rounded-circle greenBg p-3'>
                             <FontAwesomeIcon icon={faPenFancy} />
@@ -73,7 +73,7 @@ class TimeTracker extends Component {
                 </div>
 
                 {/* row 3 */}
-                <div className="row timeTrackerBox d-flex align-items-center">
+                <div className="row whiteBox mb-3 d-flex align-items-center">
                     <div className="col-4 d-flex gap-2 flex-grow-1">
                         <span className='roundedIcon d-flex justify-content-center align-items-center rounded-circle pinkBg p-3'>
                             <FontAwesomeIcon icon={faFileInvoiceDollar} /> 

@@ -15,13 +15,13 @@ class Page extends Component {
             <div id='myPage' className='flex-grow-1 superlightgrey-bg'>
                 <ActionBar />
 
-                <div className='row px-4 py-3'>
-                    <div className='col-8'>
+                <div className='row px-4 py-2 gx-3'>
+                    <div className='col-8 pr-1'>
                         <Graph />
                         <TimeTracker />
                     </div>
 
-                    <div className='col-4'>
+                    <div className='col'>
                         <Banner />
                         <Report />
                         <Integration />
