@@ -6,6 +6,7 @@ img { width: 100%; }
   --dark-bg: #21222D;
   --candy-pink: #EFB7A4;
   --fluo-green: #E1FE5E;
+  --light-azure: #BAF1F3;
   --dark-blue: #2A2B39;
   --dark-grey: #373842;
   --medium-dark-grey: #97989F;
@@ -14,6 +15,7 @@ img { width: 100%; }
   --light-grey: #F6F6F7;
   --super-lightgrey: #FAFAFB;
   --white: white;
+  --black: #21222B;
 }
 
 .grey-text {
@@ -28,9 +30,21 @@ img { width: 100%; }
   background-color: var(--super-lightgrey);
 }
 
+.pinkBg {
+  background-color: var(--candy-pink);
+}
+
+.greenBg {
+  background-color: var(--fluo-green);
+}
+
+.azureBg {
+  background-color: var(--light-azure);
+}
+
 /* navbar */
 #myNavbar {
-  min-width: 80px;
+  min-width: 110px;
   background-color: var(--dark-bg);
   height: 100vh;
   font-size: 1.5rem;
@@ -41,14 +55,15 @@ img { width: 100%; }
   color: var(--candy-pink);
 }
 
-.plusIcon {
+#plusIcon {
   color: var(--white);
   background-color: var(--dark-grey);
+  aspect-ratio: 1/1;
 }
 
 .activeIcon {
   background-color: var(--dark-blue);
-  padding: 8px 1px;
+  /* padding: 8px 1px; */
   border-radius: 5px;
 }
 
@@ -62,6 +77,10 @@ img { width: 100%; }
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
 }
 
 /* navbar in alto */
@@ -103,4 +122,31 @@ img { width: 100%; }
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* time tracker */
+.timeTrackerBox {
+  background-color: var(--white);
+  padding: 15px 10px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+}
+
+.roundedIcon {
+  aspect-ratio: 1/1;
+  height: 16px;
+}
+
+/* banner */
+#banner {
+  position: relative;
+}
+
+#banner button {
+  background-color: var(--black);
+  color: var(--white);
+  position: absolute;
+  bottom: 13%;
+  left: 11%;
+  font-size: 0.8rem;
 }

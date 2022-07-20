@@ -15,23 +15,23 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 class Navbar extends Component {
     render() {
         return (
-            <div id='myNavbar' className='d-flex flex-column align-center py-5 px-3 justify-content-between'>
+            <div id='myNavbar' className='d-flex flex-column align-items-center py-5 px-3 justify-content-between'>
                 <div className='d-flex flex-column justify-content-between align-center gap-5'>
                     <span className='pinkIcon d-flex justify-content-center'>
                         <FontAwesomeIcon icon={faCircleNodes} />
                     </span>
 
-                    <div className='d-flex flex-column align-center gap-3'>
-                        <FontAwesomeIcon icon={faWindows} className='activeIcon icon'/>
-                        <FontAwesomeIcon icon={faClock} className='icon'/>
-                        <FontAwesomeIcon icon={faCalendar} className='icon'/>
-                        <FontAwesomeIcon icon={faCircleUp} className='icon'/>
-                        <FontAwesomeIcon icon={faCalendarDays} className='icon'/>
-                        <FontAwesomeIcon icon={faGear} className='icon'/>
+                    <div className='d-flex flex-column align-items-center'>
+                        <FontAwesomeIcon icon={faWindows} className='activeIcon icon p-3'/>
+                        <FontAwesomeIcon icon={faClock} className='icon p-3'/>
+                        <FontAwesomeIcon icon={faCalendar} className='icon p-3'/>
+                        <FontAwesomeIcon icon={faCircleUp} className='icon p-3'/>
+                        <FontAwesomeIcon icon={faCalendarDays} className='icon p-3'/>
+                        <FontAwesomeIcon icon={faGear} className='icon p-3'/>
                     </div>
                 </div>
 
-                <span className='plusIcon d-flex justify-content-center p-3 rounded-circle'>
+                <span id='plusIcon' className='d-flex justify-content-center align-items-center p-3 rounded-circle'>
                     <FontAwesomeIcon icon={faPlus} />
                 </span>
             </div>

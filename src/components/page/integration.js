@@ -4,8 +4,8 @@ class Integration extends Component {
 
     render() {
         return (
-            <div className=''>
-                <h1>This is Integration component</h1>
+            <div className='container mb-3'>
+                <h1 className='sectionTitle'>Integration</h1>
             </div>
         )
     }
