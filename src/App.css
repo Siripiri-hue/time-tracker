@@ -1,5 +1,7 @@
 /* reset */
-img { width: 100%; }
+img { 
+  width: 100%; 
+}
 
 /* globali */
 :root {
@@ -70,17 +72,13 @@ img { width: 100%; }
   color: var(--fluo-green);
 }
 
-/* navbar */
+/* navbar a lato sx*/
 #myNavbar {
   min-width: 110px;
   background-color: var(--dark-bg);
   height: 100vh;
   font-size: 1.5rem;
   color: var(--medium-dark-grey);
-}
-
-.pinkIcon {
-  color: var(--candy-pink);
 }
 
 #plusIcon {
@@ -95,7 +93,7 @@ img { width: 100%; }
   border-radius: 5px;
 }
 
-.activeIcon, .icon:hover {
+.activeIcon {
   color: var(--fluo-green);
 }
 
@@ -112,7 +110,18 @@ img { width: 100%; }
   margin-bottom: 10px;
 }
 
-/* navbar in alto */
+.whiteBox {
+  background-color: var(--white);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.roundedIcon {
+  aspect-ratio: 1/1;
+  height: 16px;
+}
+
+/* navbar in alto/action bar */
 #actionBar {
   background-color: var(--white);
   border-bottom: 1px solid var(--medium-lightgrey);
@@ -125,8 +134,11 @@ img { width: 100%; }
 #searchInput input {
   background-color: var(--light-grey);
   color: var(--medium-grey);
-  padding-left: 35px;
-  min-width: 250px;
+  border: none;
+  font-size: 0.75rem;
+  padding: 10px 35px 10px;
+  /* padding-left: 35px; */
+  min-width: 275px;
 }
 
 #searchIcon {
@@ -140,8 +152,8 @@ img { width: 100%; }
 }
 
 #profile > figure {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   object-fit: cover;
   overflow: hidden;
@@ -153,18 +165,8 @@ img { width: 100%; }
   object-fit: cover;
 }
 
-/* time tracker */
-.whiteBox {
-  background-color: var(--white);
-  padding: 15px 10px;
-  border-radius: 10px;
-}
 
-.roundedIcon {
-  aspect-ratio: 1/1;
-  height: 16px;
-}
-
+/* col 2 */
 /* banner */
 #banner {
   position: relative;
@@ -179,10 +181,16 @@ img { width: 100%; }
   font-size: 0.8rem;
 }
 
+/* report */
+#report .roundedIcon {
+  height: 25px;
+}
+
 /* integration */
 #integration .whiteBox {
   border: 1px solid var(--medium-lightgrey);
 }
+
 .connected, .connect {
   color: var(--black);
   font-size: 0.8rem;
@@ -202,4 +210,23 @@ img { width: 100%; }
 
 .logoFigure {
   max-width: 70px;
+}
+
+/* hovers  */
+.icon:hover {
+  color: var(--fluo-green);
+}
+
+#timeTracker .row.whiteBox:hover, #integration .row.whiteBox:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 10px 18px 2px rgba(0,0,0,0.2);
+}
+
+.actionIcon:hover { 
+  color: black;
+}
+
+#profile:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }

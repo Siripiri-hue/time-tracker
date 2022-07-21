@@ -14,7 +14,7 @@ class ActionBar extends Component {
         return (
             <div id='actionBar' className='d-flex justify-content-between align-items-center px-4 py-3'>
                 <div className=''>
-                    <h2>Dashboard</h2>
+                    <h2 className='fs-4 m-0'>Dashboard</h2>
                     <span className='grey-text little-text'>17 January, 2022 <FontAwesomeIcon icon={faChevronDown} /></span>
                 </div>
 
@@ -24,10 +24,10 @@ class ActionBar extends Component {
                 </div>
 
                 <div className='d-flex align-items-center gap-4'>
-                    <div className='d-flex align-items-center gap-3 grey-text'>
-                        <FontAwesomeIcon icon={faMessage} />
-                        <FontAwesomeIcon icon={faShapes} />
-                        <FontAwesomeIcon icon={faBell} />
+                    <div className='d-flex align-items-center gap-4 grey-text fs-5'>
+                        <FontAwesomeIcon icon={faMessage} className='actionIcon' />
+                        <FontAwesomeIcon icon={faShapes} className='actionIcon' />
+                        <FontAwesomeIcon icon={faBell} className='actionIcon' />
                     </div>
 
                     <div id='profile' className='px-3 py-1 rounded-pill border border-secondary d-flex align-items-center gap-2'>
@@ -36,7 +36,7 @@ class ActionBar extends Component {
                         </figure>
 
                         <div id='name'>
-                            <span className='d-block fw-bold'>Stepheni <FontAwesomeIcon icon={faChevronDown} /></span>
+                            <span className='d-block fw-bold little-text'>Stepheni <FontAwesomeIcon icon={faChevronDown} /></span>
                             <span className='grey-text little-text'>Designer</span>
                         </div>
                     </div>

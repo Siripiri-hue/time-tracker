@@ -15,7 +15,7 @@ class TimeTracker extends Component {
 
     render() {
         return (
-            <div className='container mb-4'>
+            <div className='container mb-4' id='timeTracker'>
                 <div className='d-flex justify-content-between align-items-center mb-3'>
                     <h1 className='sectionTitle m-0'>Time Tracker</h1>
 
@@ -41,7 +41,7 @@ class TimeTracker extends Component {
                     </div>
 
                     <div className="col-2">
-                        <FontAwesomeIcon icon={faDollarSign} /><span className='grey-text '>Billing</span>
+                        <span className='pe-2'><FontAwesomeIcon icon={faDollarSign} /></span><span className='grey-text'>Billing</span>
                     </div>
 
                     <div className="col-3 d-flex gap-2 align-items-center">
@@ -69,7 +69,7 @@ class TimeTracker extends Component {
                     </div>
 
                     <div className="col-2">
-                        <FontAwesomeIcon icon={faDollarSign} /><span className='grey-text'>Billing</span>
+                    <span className='pe-2'><FontAwesomeIcon icon={faDollarSign} /></span><span className='grey-text'>Billing</span>
                     </div>
 
                     <div className="col-3 d-flex gap-2 align-items-center">
@@ -96,7 +96,7 @@ class TimeTracker extends Component {
                     </div>
 
                     <div className="col-2">
-                        <FontAwesomeIcon icon={faDollarSign} /><span className='grey-text'>Billing</span>
+                    <span className='pe-2'><FontAwesomeIcon icon={faDollarSign} /></span><span className='grey-text'>Billing</span>
                     </div>
 
                     <div className="col-3 d-flex gap-2 align-items-center">

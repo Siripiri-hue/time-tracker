@@ -13,7 +13,7 @@ class Graph extends Component {
         return (
             <div id='graph' className='container mb-4'>
                 <div className='d-flex justify-content-between align-items-center mb-3'>
-                    <h1 className='sectionTitle m-0'>Time Tracker</h1>
+                    <h1 className='sectionTitle m-0'>Time Spends on Project</h1>
 
                     <select name="day" className='whiteBox p-1 border-white grey-text little-text'>
                         <option value="today">Today</option>

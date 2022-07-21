@@ -12,6 +12,7 @@ class Integration extends Component {
                 <h1 className='sectionTitle mb-3'>Integration</h1>
 
                 <div className='container whiteBox px-4'>
+                    {/* slack */}
                     <div className='row whiteBox mb-3'>
                         <div className='d-flex justify-content-between align-items-center mb-1 px-1'>
                             <figure className='logoFigure mb-0'><img src={slack} alt='' /></figure>
@@ -20,7 +21,8 @@ class Integration extends Component {
 
                         <div className='grey-text little-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a sollicitudin enim. Proin quis pretium.</div>
                     </div>
-
+                    
+                    {/* notion */}
                     <div className='row whiteBox'>
                         <div className='d-flex justify-content-between align-items-center mb-1 '>
                             <figure className='logoFigure mb-0'><img src={notion} alt='' /></figure>
