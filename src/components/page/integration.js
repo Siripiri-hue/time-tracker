@@ -8,8 +8,8 @@ class Integration extends Component {
 
     render() {
         return (
-            <div id='integration'className='container mb-3'>
-                <h1 className='sectionTitle'>Integration</h1>
+            <div id='integration'className='container mb-4'>
+                <h1 className='sectionTitle mb-3'>Integration</h1>
 
                 <div className='container whiteBox px-4'>
                     <div className='row whiteBox mb-3'>

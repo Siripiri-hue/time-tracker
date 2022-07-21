@@ -5,8 +5,11 @@ img { width: 100%; }
 :root {
   --dark-bg: #21222D;
   --candy-pink: #EFB7A4;
+  --darker-pink: #DF9F8A;
   --fluo-green: #E1FE5E;
+  --darker-green: #D2ED56;
   --light-azure: #BAF1F3;
+  --dark-azure: #9FE3E5;
   --dark-blue: #2A2B39;
   --dark-grey: #373842;
   --medium-dark-grey: #97989F;
@@ -34,12 +37,37 @@ img { width: 100%; }
   background-color: var(--candy-pink);
 }
 
+.darkerPinkBg {
+  background-color: var(--darker-pink);
+}
+
 .greenBg {
   background-color: var(--fluo-green);
 }
 
+.darkerGreenBg {
+  background-color: var(--darker-green);
+}
+
 .azureBg {
   background-color: var(--light-azure);
+}
+
+.darkerAzureBg {
+  background-color: var(--dark-azure);
+}
+
+.little-circle {
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+
+.pinkText {
+  color: var(--candy-pink);
+}
+
+.greenText {
+  color: var(--fluo-green);
 }
 
 /* navbar */

@@ -9,16 +9,27 @@ import { faPenFancy } from '@fortawesome/free-solid-svg-icons';
 import { faFileInvoiceDollar } from '@fortawesome/free-solid-svg-icons';
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 
 class TimeTracker extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <h1 className='sectionTitle'>Time Tracker</h1>
+            <div className='container mb-4'>
+                <div className='d-flex justify-content-between align-items-center mb-3'>
+                    <h1 className='sectionTitle m-0'>Time Tracker</h1>
+
+                    <div className='d-flex justify-content-center align-items-center gap-2'>
+                        <select name="day" className='whiteBox p-1 border-white grey-text little-text'>
+                            <option value="today">Today</option>
+                        </select>
+
+                        <span className='whiteBox grey-text py-1 px-2'><FontAwesomeIcon icon={faFilter} /></span>   
+                    </div>
+                </div>
             
                 {/* row 1 */}
-                <div className='row px-0 whiteBox mb-3 d-flex align-items-center'>
+                <div className='row whiteBox mb-3 d-flex align-items-center'>
                     <div className='col-4 d-flex gap-2 flex-grow-1'>
                         <span className='roundedIcon d-flex justify-content-center align-items-center rounded-circle azureBg p-3'>
                             <FontAwesomeIcon icon={faWrench} />
